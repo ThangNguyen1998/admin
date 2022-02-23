@@ -20,15 +20,13 @@ export default function SideNav() {
   const routes = [
     {
       key: '1',
-      text: 'List Accounts',
+      text: 'Accounts',
       url: '/accounts',
-      // icon: <HomeOutlined />,
     },
     {
       key: '2',
-      text: 'List Song',
+      text: 'Songs',
       url: '/songs',
-      // icon: <TableOutlined />,
     },
   ];
 
@@ -58,7 +56,9 @@ export default function SideNav() {
         {routes.map((route) => {
           return (
             <Menu.Item key={route.key}>
-              <Link to={route.url}>{route.text}</Link>
+              <Link to={route.url}>
+                <div style={{ fontWeight: 'bold' }}>{route.text}</div>
+              </Link>
             </Menu.Item>
           );
         })}

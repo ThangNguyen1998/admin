@@ -1,6 +1,6 @@
 import React from 'react';
 import Cookies from 'js-cookie';
-import avatarImg from '../../assets/images/avatar.svg';
+import avatarImg from '../../assets/images/avatar.png';
 import { useHistory } from 'react-router-dom';
 import styles from './styles.module.scss';
 import { Menu, Dropdown } from 'antd';
@@ -47,7 +47,11 @@ export default function PageHeader() {
             <div>
               <span>{`Hi ${localStorage.getItem('userInfor')}`}</span>
               &nbsp;
-              <img className={styles.icon} src={avatarImg} alt="" />
+              <img
+                style={{ width: 40, height: 40, borderRadius: 20 }}
+                src={avatarImg}
+                alt=""
+              />
             </div>
           </Dropdown>
         </div>
