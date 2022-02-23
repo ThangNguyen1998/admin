@@ -1,0 +1,21 @@
+.listAccount {
+  .search {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+    .searchInput {
+      width: 100%;
+      max-width: 200px;
+      :global {
+        .ant-input {
+          height: 40px;
+          border-radius: 5px 0 0 5px;
+        }
+        .ant-input-search-button {
+          border-radius: 0 5px 5px 0;
+          height: 40px;
+        }
+      }
+    }
+  }
+}

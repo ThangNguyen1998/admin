@@ -1,0 +1,48 @@
+.listAccount {
+  padding: 0 20px;
+  .search {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+    .searchInput {
+      width: 100%;
+      max-width: 200px;
+      :global {
+        .ant-input {
+          height: 40px;
+          border-radius: 5px 0 0 5px !important;
+        }
+        .ant-input-search-button {
+          border-radius: 0 5px 5px 0 !important;
+          height: 40px;
+        }
+      }
+    }
+  }
+  .btnGroup {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    .btnAction {
+      border: 0;
+      box-shadow: none;
+      margin-right: 10px;
+      padding: 0 5px;
+      background-color: transparent;
+      &:hover {
+        background-color: transparent;
+      }
+    }
+  }
+  .btnAdd {
+    background-color: #e70a0a;
+    border-radius: 5px;
+    color: #fff;
+    border: 0;
+    box-shadow: none;
+    height: 40px;
+    width: 100%;
+    max-width: 100px;
+    margin-left: 10px;
+  }
+}

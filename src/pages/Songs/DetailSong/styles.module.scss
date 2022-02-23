@@ -1,0 +1,33 @@
+.listAccount {
+  padding: 20px;
+  margin-top: 30px;
+  .back {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    span {
+      margin-left: 10px;
+    }
+  }
+  .form {
+    padding: 0 30px;
+    .textarea {
+      min-height: 200px;
+      min-width: 100%;
+      border: 1px solid #d9d9d9;
+      border-radius: 2px;
+      padding: 4px 11px;
+    }
+  }
+  .line {
+    display: flex;
+  }
+  :global {
+    .ant-input[disabled] {
+      background-color: transparent;
+      color: #000;
+      cursor: text;
+    }
+  }
+}
